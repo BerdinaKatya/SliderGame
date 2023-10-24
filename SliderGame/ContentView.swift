@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var sliderValue = Float.random(in: 0...100)
     @State private var targetValue = Int.random(in: 0...100)
-    @State private var alphaValue = 1.0
+    @State private var alphaValue = 100
     @State private var isAlertPresented = false
     
     var body: some View {
@@ -19,13 +19,12 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                
                 UISliderRepresentation(
                     sliderValue: $sliderValue,
                     targetValue: $targetValue,
-                    alphaValue: $alphaValue
+                    alphaValue: $alphaValue, 
+                    action: computeScore()
                 )
-                
                 Text("100")
             }.padding(.top, 20)
             

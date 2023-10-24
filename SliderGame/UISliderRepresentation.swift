@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct UISliderRepresentation: UIViewRepresentable {
-
     @Binding var sliderValue: Float
     @Binding var targetValue: Int
-    @Binding var alphaValue: Double
+    @Binding var alphaValue: Int
+    let action: Int
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
@@ -36,28 +36,13 @@ struct UISliderRepresentation: UIViewRepresentable {
             red: 255 / 255,
             green: 1 / 255,
             blue: 1 / 255,
-            alpha: CGFloat(alphaValue)
+            alpha: CGFloat(Double(action) / Double(alphaValue))
         )
     }
-    
-//    func getAlphaValue(sliderValue: Float, targetNumber: Int) -> CGFloat {
-//        var result: CGFloat = 0
-//        
-//        if sliderValue == Float(targetNumber) {
-//            result = 1
-//        } else if sliderValue > Float(targetNumber) {
-//            result = CGFloat(1 / (sliderValue / Float(targetNumber)))
-//        } else if sliderValue < Float(targetNumber) {
-//            result = CGFloat(0.4 + sliderValue / Float(targetNumber))
-//        }
-//        
-//        return result
-//    }
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(sliderValue: $sliderValue)
     }
-    
 }
 
 extension UISliderRepresentation {
