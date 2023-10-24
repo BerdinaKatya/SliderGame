@@ -11,6 +11,7 @@
 		642D5EA02AE7785300480930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D5E9F2AE7785300480930 /* ContentView.swift */; };
 		642D5EA22AE7785400480930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642D5EA12AE7785400480930 /* Assets.xcassets */; };
 		642D5EA52AE7785400480930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642D5EA42AE7785400480930 /* Preview Assets.xcassets */; };
+		642D5EAC2AE77B3D00480930 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D5EAB2AE77B3D00480930 /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		642D5E9F2AE7785300480930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		642D5EA12AE7785400480930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642D5EA42AE7785400480930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		642D5EAB2AE77B3D00480930 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				642D5E9D2AE7785300480930 /* SliderGameApp.swift */,
 				642D5E9F2AE7785300480930 /* ContentView.swift */,
+				642D5EAB2AE77B3D00480930 /* UISliderRepresentation.swift */,
 				642D5EA12AE7785400480930 /* Assets.xcassets */,
 				642D5EA32AE7785400480930 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				642D5EA02AE7785300480930 /* ContentView.swift in Sources */,
 				642D5E9E2AE7785300480930 /* SliderGameApp.swift in Sources */,
+				642D5EAC2AE77B3D00480930 /* UISliderRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
